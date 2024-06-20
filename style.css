@@ -1,1 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Fredericka+the+Great&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    cursor: pointer;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --prim: #ff4500;
+    --sec: #71c6e8;
+    --gold: goldenrod;
+    --dark: #111;
+    --light: #eee;
+    --grey-d: #333;
+    --grey-m: #787878;
+    --grey-l: #ccc;
+    --yell-l: #f8f8c3;
+    --bord-r: 0.5rem;
+    --trns: all 0.5s;
+
+}
