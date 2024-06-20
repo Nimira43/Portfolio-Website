@@ -28,6 +28,68 @@ html {
     --trns: all 0.5s;
 }
 
+.mouse-circle,
+.mouse-dot {
+    border-radius: 50%;
+    position: fixed;
+    z-index: 300;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.mouse-circle {
+    width: 6rem;
+    height: 6rem;
+    border: 0.1rem solid var(--sec);
+    animation: mouseCircleAnim 10s infinite linear;  
+}
+
+@keyframes mouseCircleAnim {
+    0% {
+        width: 6rem;
+        height: 6rem;
+    }
+    25% {
+        width: 8rem;
+        height: 8rem;
+    }
+    35% {
+        width: 4rem;
+        height: 4rem;
+    }
+    70% {
+        width: 8rem;
+        height: 8rem;
+    }
+    100% {
+        width: 6rem;
+        height: 6rem;
+    }
+}
+
+.mouse-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: var(--sec);
+    animation: mouseDotAnim 10s infinite linear;
+}
+
+@keyframes mouseDotAnim {
+    0% {
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+
+    55% {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    100% {
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+}
+
 .page-bg {
     position: fixed;
     width: 100%;
