@@ -28,6 +28,12 @@ html {
     --trns: all 0.5s;
 }
 
+.centre {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
 .mouse-circle,
 .mouse-dot {
     border-radius: 50%;
@@ -105,9 +111,6 @@ html {
     position: relative;
     width: 100%;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .logo {
@@ -117,4 +120,33 @@ html {
     left: 5rem;
     font-size: 2rem;
     color: var(--prim); 
+}
+
+.circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.circle {
+    width: 22rem;
+    height: 22rem;
+    border-radius: 50%;
+}
+
+.main-circle {
+    width: 55rem;
+    height: 55rem;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.main-circle img {
+    mix-blend-mode: color-dodge;
 }
