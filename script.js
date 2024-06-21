@@ -42,7 +42,6 @@ const animateCircles = (e, x, y) => {
     mY = e.clientY
 }
 
-
 document.body.addEventListener('mousemove', (e) => {
     let x = e.clientX
     let y = e.clientY
