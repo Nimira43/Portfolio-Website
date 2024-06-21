@@ -18,6 +18,7 @@ html {
     --prim: #ff4500;
     --sec: #71c6e8;
     --gold: goldenrod;
+    --black: #000;
     --dark: #111;
     --light: #eee;
     --grey-d: #333;
@@ -119,7 +120,7 @@ html {
     top: 2rem;
     left: 5rem;
     font-size: 2rem;
-    color: var(--prim); 
+    color: var(--gold); 
 }
 
 .circles {
@@ -137,7 +138,34 @@ html {
     width: 22rem;
     height: 22rem;
     border-radius: 50%;
-    
+    align-self: center;
+    justify-self: center;
+    opacity: 0.5;
+}
+
+.circle-1 {
+    background: url('./images/circles/circ-1.jpg') center no-repeat;  
+}
+
+.circle-2 {
+    background: url('./images/circles/circ-2.jpg') center no-repeat;    
+}
+
+.circle-3 {
+    background: url('./images/circles/circ-3.jpg') center no-repeat;
+}
+
+.circle-4 {
+    background: url('./images/circles/circ-4.jpg') center no-repeat;
+}
+
+.circle-1,
+.circle-2,
+.circle-3,
+.circle-4 {
+    background-size: cover;
+    background-clip: content-box;
+    border: 0.5rem solid var(--black);
 }
 
 .main-circle {
@@ -150,4 +178,24 @@ html {
 
 .main-circle img {
     mix-blend-mode: color-dodge;
+}
+
+.featured-text {
+    font-family: 'Fredericka the Great', serif;
+    font-size: 2rem;
+    color: var(--gold);
+    text-transform: uppercase;
+    width: 0;
+    word-wrap: break-word;
+    line-height: 3.5;
+    position: sticky;
+    top: 0;
+}
+
+.featured-text-1 {
+    margin: 0 auto 0 10rem;
+}
+
+.featured-text-2 {
+    margin: 0 10rem 0 auto;
 }
